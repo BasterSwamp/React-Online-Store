@@ -1,0 +1,36 @@
+.ticker {
+  background: #000;
+  width: 100%;
+}
+.tickerBody {
+  padding: clamp(2.5rem, 2.372rem + 0.57vw, 2.813rem) 0;
+  overflow: hidden;
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+  white-space: nowrap;
+  position: relative;
+}
+.tickerContent {
+  display: inline-block;
+  animation: 20s slide infinite linear;
+}
+.tickerContent img {
+  height: clamp(1.875rem, 1.364rem + 2.27vw, 3.125rem);
+  margin: 0 clamp(1.25rem, 0.739rem + 2.27vw, 2.5rem);
+}
+
+/*If needed, you can uncomment to pause when hovering*/
+
+/*.ticker:hover .tickerContent {
+  animation-play-state: paused;
+} */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

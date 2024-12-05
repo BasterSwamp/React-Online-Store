@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "IntegralCF";
+  src: url("./assets/fonts/IntegralCF-ExtraBold.woff2") format("woff2"),
+    url("./assets/fonts/IntegralCF-ExtraBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/fonts/Satoshi-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Satoshi-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/fonts/Satoshi-Medium.woff2") format("woff2"),
+    url("./assets/fonts/Satoshi-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/fonts/Satoshi-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Satoshi-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  font-family: "Satoshi";
+}
+
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 320;
+  position: relative;
+  color: #000;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+@media (max-width: 767.98px) {
+  body.lock {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+  }
+}
+
+input,
+button,
+textarea {
+  font-family: "Satoshi";
+}
+
+input::-ms-clear {
+  display: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+.lock body {
+  overflow: hidden;
+  touch-action: none;
+  overscroll-behavior: none;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 1269.98px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    max-width: none;
+    padding: 0 15px;
+  }
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#root > * {
+  min-width: 0;
+}
+main {
+  flex: 1 1 auto;
+}
+.button {
+  font-weight: 500;
+  color: #fff !important;
+  border-radius: 62px;
+  background-color: #000;
+  white-space: nowrap;
+  font-size: clamp(0.875rem, 0.824rem + 0.23vw, 1rem);
+}
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide:not(.swiper-slide-active):not(.swiper-slide-next):not(
+    .swiper-slide-prev
+  ) {
+  filter: blur(2px);
+  transition: filter 0.3s ease;
+}
+.hidden {
+  display: none;
+}
+hr {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: clamp(2rem, 1.591rem + 1.82vw, 3rem);
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  font-family: "IntegralCF";
+}

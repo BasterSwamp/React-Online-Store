@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  text-align: left;
+}
+.more {
+  text-align: center;
+  margin-top: clamp(2.5rem, 2.244rem + 1.14vw, 3.125rem);
+}
+.button {
+  padding: 14px 85px;
+}
+.empty {
+  padding-top: 24px;
+  text-align: center;
+  font-size: 24px;
+}

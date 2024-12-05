@@ -1,0 +1,85 @@
+.container {
+  position: relative;
+}
+.mainBanner {
+  width: 100%;
+  height: 663px;
+  background-color: #f2f0f1;
+}
+.bannerImg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+.info {
+  padding-top: clamp(3.125rem, 1.77rem + 6.02vw, 6.438rem);
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  z-index: 1;
+  position: relative;
+}
+.title {
+  max-width: clamp(19.688rem, 12.912rem + 30.11vw, 36.25rem);
+  font-size: clamp(2.25rem, 1.534rem + 3.18vw, 4rem);
+  font-weight: 700;
+  font-family: "IntegralCF";
+}
+.description {
+  padding: 32px 0;
+  line-height: 1.375;
+  color: rgba(0, 0, 0, 0.6);
+  max-width: 545px;
+  font-size: clamp(0.875rem, 0.824rem + 0.23vw, 1rem);
+}
+.info ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  row-gap: 12px;
+}
+.info li h4 {
+  font-weight: 700;
+  font-size: clamp(1.5rem, 1.091rem + 1.82vw, 2.5rem);
+}
+.info li span {
+  display: inline-block;
+  line-height: 1.375;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 5px;
+  font-size: clamp(0.75rem, 0.648rem + 0.45vw, 1rem);
+}
+.button {
+  padding: 15px 67.5px;
+}
+
+@media (max-width: 1269.98px) {
+  .info ul {
+    max-width: 400px;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 991.98px) {
+  .container {
+    position: none;
+  }
+  .mainBanner {
+    height: auto;
+    position: relative;
+  }
+  .bannerImg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .info ul {
+    max-width: 570px;
+  }
+}
+@media (max-width: 767.98px) {
+  .bannerImg {
+    height: 100vw;
+  }
+}

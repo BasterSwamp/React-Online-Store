@@ -1,0 +1,63 @@
+@import "swiper/swiper-bundle.css";
+
+.body {
+  overflow: hidden;
+}
+.container {
+  margin-top: clamp(3.125rem, 2.358rem + 3.41vw, 5rem) !important;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  position: relative;
+}
+.navigation {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 19px;
+}
+.btnPrev,
+.btnNext {
+  cursor: pointer;
+}
+.slide {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: clamp(1.5rem, 1.398rem + 0.45vw, 1.75rem)
+    clamp(1.5rem, 1.295rem + 0.91vw, 2rem);
+}
+.gallary {
+  display: flex;
+  /* overflow: hidden; */
+}
+.name {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: clamp(1rem, 0.898rem + 0.45vw, 1.25rem);
+  line-height: 1.1;
+  white-space: nowrap;
+  column-gap: 6px;
+  margin: clamp(0.938rem, 0.861rem + 0.34vw, 1.125rem) 0
+    clamp(0.625rem, 0.523rem + 0.45vw, 0.875rem);
+}
+.title {
+  text-align: left;
+  max-width: 85%;
+}
+.description {
+  line-height: 1.37;
+  color: rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 767.98px) {
+  .navigation {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 19px;
+  }
+}

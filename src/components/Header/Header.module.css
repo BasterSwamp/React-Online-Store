@@ -1,0 +1,184 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: clamp(1.25rem, 1.148rem + 0.45vw, 1.5rem) !important;
+  padding-bottom: clamp(1.25rem, 1.148rem + 0.45vw, 1.5rem) !important;
+  position: relative;
+  z-index: 20x;
+}
+.logoBody {
+  display: flex;
+  gap: 19px;
+}
+.burger {
+  margin-top: 12px;
+}
+.logo {
+  font-family: "IntegralCF";
+  font-weight: 700;
+  font-size: 32px;
+  color: #000;
+}
+.nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.nav li a {
+  color: rgba(0, 0, 0, 0.6);
+}
+.nav li a:hover {
+  color: #000;
+}
+.tools {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+.cart {
+  position: relative;
+}
+.cart span {
+  position: absolute;
+  top: -4px;
+  right: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 15px;
+  height: 15px;
+  background: #000;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 8px;
+}
+.searchForm {
+  position: relative;
+}
+.icon {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+.inputBody {
+  position: relative;
+}
+.inputIcon {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translate(0, -50%);
+  pointer-events: none;
+}
+.inputBody input {
+  padding: 12px 16px 12px 52px;
+  color: rgba(0, 0, 0, 0.4);
+  border-radius: 62px;
+  width: 577px;
+  background: #f0f0f0;
+}
+.box {
+  width: 100%;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  z-index: 25;
+  background: #f0f0f0;
+  max-height: 495px;
+  overflow: auto;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border: 1px solid #0000006e;
+}
+.boxPreview {
+  width: 75px;
+  border-radius: 10px;
+}
+.boxLink {
+  display: flex;
+  column-gap: 15px;
+}
+.boxInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.boxTitle {
+  font-weight: 700;
+  font-size: 19px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+  max-height: calc(1.2em * 2);
+}
+.boxPrice {
+  font-weight: 700;
+  font-size: 20px;
+  color: #0000006c;
+}
+
+@media (max-width: 1269.98px) {
+  .inputBody input {
+    width: 360px;
+  }
+}
+@media (max-width: 991.98px) {
+  .inputBody {
+    position: absolute;
+    bottom: -50px;
+    right: -130%;
+    width: 100%;
+    z-index: 50;
+    transition: right 0.1s ease;
+  }
+  .inputBody input {
+    background: #fff;
+    width: 100%;
+  }
+  .nav {
+    bottom: -55px;
+    left: -130%;
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    background: #000;
+    z-index: 50;
+    padding: 25px;
+    justify-content: center;
+    color: #fff;
+    border-radius: 62px;
+    transition: left 0.1s ease;
+    gap: 20px;
+  }
+  .nav li a {
+    color: #fff;
+    white-space: nowrap;
+  }
+  .nav.activeNav {
+    left: 0%;
+    transition: left 0.3s ease;
+  }
+  .inputBody.activeBody {
+    right: 0%;
+    transition: right 0.3s ease;
+  }
+}
+@media (max-width: 767.98px) {
+  .inputBody,
+  .nav {
+    width: 96%;
+  }
+  .nav.activeNav {
+    left: 2%;
+  }
+  .inputBody.activeBody {
+    right: 2%;
+  }
+}

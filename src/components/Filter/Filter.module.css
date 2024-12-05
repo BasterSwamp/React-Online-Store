@@ -1,0 +1,21 @@
+.filterBody {
+  display: flex;
+  gap: clamp(0.5rem, 0.347rem + 0.68vw, 0.875rem);
+  margin-top: clamp(2.5rem, 2.244rem + 1.14vw, 3.125rem);
+  align-items: center;
+  justify-content: space-between;
+}
+.filterInputs {
+  display: flex;
+  gap: clamp(0.5rem, 0.347rem + 0.68vw, 0.875rem);
+  flex-wrap: wrap;
+  align-items: center;
+}
+.input {
+  background: #f0f0f0;
+  padding: 13px 22px;
+  border-radius: 62px;
+}
+.sortButton {
+  width: 30px;
+}
