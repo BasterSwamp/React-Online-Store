@@ -1,9 +1,6 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
-.container {
-  margin-top: clamp(3.125rem, 2.563rem + 2.5vw, 4.5rem);
-}
 .section {
   display: flex;
   flex-direction: column;

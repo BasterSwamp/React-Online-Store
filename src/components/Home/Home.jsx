@@ -29,24 +29,26 @@ export default function Home() {
     <div className={style}>
       <Hero />
       <Ticker />
-      <div className={`container ${style.container}`}>
-        <div className={style.section}>
-          <ProductItem
-            title={"NEW ARRIVALS"}
-            products={filtered.filter((product) => !product.oldPrice)}
-            amount={4}
-          />
-          <Link to={ROUTES.NEW_ARRIVALS} className={style.link}>
-            View All
-          </Link>
-        </div>
+      <div className={style.section}>
+        <ProductItem
+          title={"NEW ARRIVALS"}
+          products={filtered.filter((product) => !product.oldPrice)}
+          amount={4}
+        />
+        <Link to={ROUTES.NEW_ARRIVALS} className={style.link}>
+          View All
+        </Link>
+      </div>
+      <div className="container">
         <hr className={style.border} />
-        <div className={style.section}>
-          <ProductItem title={"TOP SELLING"} products={filtered} amount={4} />
-          <Link to={ROUTES.ON_SALE} className={style.link}>
-            View All
-          </Link>
-        </div>
+      </div>
+      <div className={style.section}>
+        <ProductItem title={"TOP SELLING"} products={filtered} amount={4} />
+        <Link to={ROUTES.ON_SALE} className={style.link}>
+          View All
+        </Link>
+      </div>
+      <div className="container">
         <Categories
           title={"BROWSE BY dress STYLE"}
           products={categories.list}

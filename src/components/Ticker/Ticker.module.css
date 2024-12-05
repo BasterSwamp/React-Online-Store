@@ -1,6 +1,7 @@
 .ticker {
   background: #000;
   width: 100%;
+  margin-bottom: clamp(3.125rem, 2.563rem + 2.5vw, 4.5rem);
 }
 .tickerBody {
   padding: clamp(2.5rem, 2.372rem + 0.57vw, 2.813rem) 0;
